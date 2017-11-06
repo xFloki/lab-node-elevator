@@ -45,12 +45,14 @@ class Elevator {
   }
   floorUp() {
     this.floor++;
+    this._passengersLeave();
     this._passengersEnter();
     if (this.floor === this.MAXFLOOR) this.direction = "down";
   }
   floorDown() {
     this.floor--;
     this._passengersLeave();
+    this._passengersEnter();
     if (this.floor === 0) this.direction = "up";
   }
   call(person) {
