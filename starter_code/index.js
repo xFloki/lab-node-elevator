@@ -10,6 +10,6 @@ e.call(new Person("Arturo", 2 , 0));
 e.call(new Person("Nano", 2 , 0));
 e.call(new Person("Alex", 9 , 0));
 
- // setTimeout(function(){
- //   e.call(new Person("James", 6 , 10));
- // }, 5000);
+setTimeout(function(){
+  e.call(new Person("James", 4 , 10));
+}, 26000);

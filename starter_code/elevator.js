@@ -11,11 +11,11 @@ class Elevator {
 
   start() {
     this.interval = setInterval(() => {
-      if (this.requests.length > 0) this.move();
+      if (this.requests.length > 0 || this.floor != 0) this.move();
       this.update();
     }, 1000);
   }
-  
+
   stop() {
     clearInterval(this.interval);
   }
